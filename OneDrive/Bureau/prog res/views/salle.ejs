@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace de travail</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+<header>
+    <!-- Insérez votre barre de navigation ici -->
+</header>
+
+<main class="workspace">
+    <section class="hero-section">
+        <h1>Un espace de travail flexible et adapté à vos besoins</h1>
+        <div class="tab-container">
+            <button class="tab">Bureau</button>
+            <button class="tab">Coworking</button>
+            <button class="tab">Bureaux virtuels</button>
+            <button class="tab">Salles de réunion</button>
+        </div>
+        <p>Nos locations de bureaux flexibles et entièrement personnalisables sont disponibles à l'heure, à la journée ou aussi longtemps que vous le souhaitez.</p>
+    </section>
+    
+    <section class="options-section">
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="/images/img1.png" alt="Salle de réunion" class="card-image">
+                <h2 class="card-title">Salle de réunion</h2>
+                <p class="card-description">Des lieux disponibles à l'heure pour se rencontrer, collaborer et organiser des entretiens. Au besoin, notre équipe sur place est là pour vous assister.</p>
+                <div class="card-details">
+                    <p>Capacité:  20 places </p>
+                    <p>Equipement: Connexion internet,Vidéoprojecteur et écran de projection  </p>
+                    <p>Disponnibilité:  Lundi et Mardi </p>
+                    <p>À partir de TND 10 par heure</p>
+                </div>
+                <button class="card-button">Réserver maintenant</button>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="/images/img4.png" alt="Salles d'entretien" class="card-image">
+                <h2 class="card-title">Salle d'entretien</h2>
+                <p class="card-description">Des espaces professionnels et privés pour les entretiens d'embauche, les évaluations annuelles ou les groupes de recherche.</p>
+                <div class="card-details">
+                    <p>Capacité:  5 places </p>
+                    <p>Equipement: Connexion internet,Vidéoprojecteur et écran de projection ,Tableau   </p>
+                    <p>Disponnibilité:  Toutes la semaines </p>
+                    <p>À partir de TND 9 par heure</p>
+                </div>
+                <button class="card-button">Réserver maintenant</button>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="/images/img3.png" alt="Salle de formation" class="card-image">
+                <h2 class="card-title">Salle de formation</h2>
+                <p class="card-description">La solution idéale si vous avez besoin d'un espace spécialement conçu avec des bureaux, des tableaux blancs et des écrans pour vos formations.</p>
+                <div class="card-details">
+                    <p>Capacité:  30 places </p>
+                    <p>Equipement: Connexion internet,Vidéoprojecteur et écran de projection  </p>
+                    <p>Disponnibilité:  Samedi et Dimanche </p>
+                    <p>À partir de TND 15 par heure</p>
+                </div>
+                <button class="card-button">Réserver maintenant</button>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="/images/img2.png" alt="Salles de conseil" class="card-image">
+                <h2 class="card-title">Salle de conseil</h2>
+                <p class="card-description">Un bureau privé et professionnel, accessible à la demande. Parfait quand vous avez besoin de vous concentrer pour travailler au mieux.</p>
+                <div class="card-details">
+                    <p>Capacité:  12 places </p>
+                    <p>Equipement: Connexion internet,Vidéoprojecteur et écran de projection ,Tableau </p>
+                    <p>Disponnibilité:  Lundi,Mardi,Mercredi  </p>
+                    <p>À partir de TND 20 par heure</p>
+                </div>
+                <button class="card-button">Réserver maintenant</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!-- Insérez votre pied de page ici -->
+</footer>
+
+</body>
+</html>
+
+
+<div id="calendar" style="display:none;">
+  <!-- Le calendrier sera injecté ici -->
+</div>
+
+<script src="/script.js"></script>
+
+<script>
+  document.getElementById('reserveButton').addEventListener('click', function() {
+    var calendarHTML = '<input type="date">';
+    document.getElementById('calendar').innerHTML = calendarHTML;
+    document.getElementById('calendar').style.display = 'block';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #472dbb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: #4565a0;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+  /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.room-info {
+  flex-grow: 1;
+}
+
+#reserveButton {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#reserveButton:hover {
+  background-color: #0056b3;
+}
+/* styles/style.css */
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Aligner les éléments en haut */
+  gap: 20px; /* Espace entre l'image et les informations */
+}
+
+.image-container {
+  flex: 1; /* Prendre autant d'espace que possible */
+}
+
+.info-container {
+  flex: 2; /* Prendre deux fois plus d'espace que l'image */
+  padding: 0 20px; /* Ajouter un peu de padding autour du texte */
+}
+
+/* Assurez-vous que l'image ne dépasse pas sa boîte conteneur */
+.image-container img {
+  width: 100%;
+  height: auto;
+}

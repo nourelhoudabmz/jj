@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation de Salle</title>
+    <link rel="stylesheet" href="/styles/main1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Possibilité de Réserver en Ligne</h1>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="roomType">Type d'espace requis</label>
+                <select id="roomType" name="roomType">
+                    <option value="meetingRoom">Salle de réunion</option>
+                    <!-- Plus d'options ici -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" value="">
+            </div>
+            <div class="form-group">
+                <label for="startTime">De</label>
+                <input type="time" id="startTime" name="startTime">
+            </div>
+            <div class="form-group">
+                <label for="endTime">À</label>
+                <input type="time" id="endTime" name="endTime">
+            </div>
+            <div class="form-group">
+                <label for="peopleCount">Nombre de personnes</label>
+                <input type="number" id="peopleCount" name="peopleCount">
+            </div>
+            <div class="form-group">
+                <label for="city">Site*</label>
+                <input type="text" id="city" name="city" placeholder="Entrez une ville">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Rechercher</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
